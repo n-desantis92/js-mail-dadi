@@ -13,7 +13,9 @@ for(i = accessi.length; i > 0 ; i--){
 // stampa un messaggio appropriato sull’esito del controllo
 if(autorizzazione) {
   alert("ben fatto ora puoi accedere");
+  document.getElementById('accesso-autorizzato').innerHTML = "la tua e-mail è " + mail;
 }
 else{
   alert("inserisci un e-mail valida");
+  location.reload();
 }
